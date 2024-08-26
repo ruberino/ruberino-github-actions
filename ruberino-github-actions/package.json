@@ -1,0 +1,23 @@
+{
+  "name": "ruberino-github-actions",
+  "version": "0.0.1",
+  "description": "testing github actions",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruberino/ruberino-github-actions.git"
+  },
+  "keywords": [
+    "testing",
+    "github-actions"
+  ],
+  "author": "Ruben Ringdal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ruberino/ruberino-github-actions/issues"
+  },
+  "homepage": "https://github.com/ruberino/ruberino-github-actions#readme"
+}
