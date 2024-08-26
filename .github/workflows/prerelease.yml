@@ -27,9 +27,6 @@ jobs:
           node-version: 20
           cache: "npm"
 
-      - name: Clean cache
-        run: npm cache clean --force
-
       - name: lint
         run: npm run lint
 

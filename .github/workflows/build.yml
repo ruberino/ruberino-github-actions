@@ -11,8 +11,24 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
+    strategy:
+      matrix:
+        node-version: [18, 20]
+      fail-fast: true
+      max-parallel: 2
     steps:
-    - run: "echo 'Starting build'"
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "npm"
+
+      - name: lint
+        run: npm run lint
+
+      - name: Install dependencies
+        run: npm ci
